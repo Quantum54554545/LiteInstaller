@@ -12,7 +12,7 @@
 
 ```csharp
 string installerUrl = ("DownloadURL");
-```
+
 
     Замените `"DownloadURL"` на свою ссылку для скачивания инсталлятора.
 
