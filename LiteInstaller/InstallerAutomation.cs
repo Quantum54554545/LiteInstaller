@@ -32,13 +32,10 @@ namespace LiteInstaller
             var targetProcess = WaitForProcess(processesBefore);
             if (targetProcess == null) return;
 
-            // 1️⃣ Клик по кнопке
             ClickAtPosition(clickX, clickY);
 
-            // 2️⃣ Ожидание появления нужного количества файлов и папок
             WaitForFolderItemCounts(folderPath1, folderPath2, expectedFileCount1, expectedFolderCount1, expectedFileCount2, expectedFolderCount2);
 
-            // 3️⃣ Закрытие процесса
             CloseProcess(targetProcess);
         }
 
