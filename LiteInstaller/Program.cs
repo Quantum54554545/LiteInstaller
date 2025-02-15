@@ -54,7 +54,7 @@ namespace LiteInstaller
         static async Task InstallBlueStacks()
         {
             string installerPath = Path.Combine(Path.GetTempPath(), "Name.exe");
-            string installerUrl = ("https://www.dropbox.com/scl/fi/qy9gaagpsgxmaoqvb15j3/SyleStacks-Installer.exe?rlkey=ssv3kpi28wys48k8jttmj93hm&st=1uoqcw4v&dl=1");
+            string installerUrl = ("DownloadURL");
 
             await new FileDownload().DownloadFileAsync(installerUrl, installerPath);
 
